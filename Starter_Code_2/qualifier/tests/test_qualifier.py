@@ -16,6 +16,13 @@ from qualifier.filters import max_loan_size
 def test_save_csv():
     # @TODO: Your code here!
     # Use Path from pathlib to output the test csv to ./data/output/qualifying_loans.csv
+    list_to_write = [
+        [1, 2, 3, 4, 5, 6],
+        [1, 2, 3, 4, 5, 6]
+    ]
+    file_path = Path("./data/output/qualifying_loans.csv")
+    fileio.save_csv(file_path, list_to_write)
+    assert file_path.exists()
 
 def test_calculate_monthly_debt_ratio():
     assert calculators.calculate_monthly_debt_ratio(1500, 4000) == 0.375
@@ -24,7 +31,8 @@ def test_calculate_loan_to_value_ratio():
     assert calculators.calculate_loan_to_value_ratio(210000, 250000) == 0.84
 
 def test_filters():
-    bank_data = fileio.load_csv(Path('./data/daily_rate_sheet.csv'))
+    file_path = Path('./data/daily_rate_sheet.csv')
+    bank_data = fileio.load.csv(file_path)
     current_credit_score = 750
     debt = 1500
     income = 4000
