@@ -5,6 +5,7 @@ This contains a helper function for loading and saving CSV files.
 
 """
 import csv
+from pathlib import Path
 
 
 def load_csv(csvpath):
@@ -34,7 +35,7 @@ def load_csv(csvpath):
 
 def save_csv(output_path, data):
     header = ["Lender", "Max Loan Amount, Max LTV, Max DTI, Min Credit Score, Interest Rate"]
-    with open(csvpath, 'w') as new_csv_file:
+    with open(output_path, 'w') as new_csv_file:
 
         csvwriter = csv.writer(new_csv_file, delimiter = ",")
         csvwriter.writerow(header)
