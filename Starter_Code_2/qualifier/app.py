@@ -109,7 +109,7 @@ def save_qualifying_loans(qualifying_loans):
     Args:
         qualifying_loans (list of lists): The qualifying bank loans.
     """
-    
+    questionary.confirm().ask()
 
 
 
