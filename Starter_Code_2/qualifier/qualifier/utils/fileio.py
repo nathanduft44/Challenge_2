@@ -33,10 +33,13 @@ def load_csv(csvpath):
    # @TODO: Complete the usability dialog for savings the CSV Files.
 
 def save_csv(output_path, data):
-    header
-    with open(csvpath, 'w') as qualifying_loans:
-        csvwriter.writerows(qualifying_loans)
-        csvwriter.writeheader(qualifying_loans)
+    header = ["Lender", "Max Loan Amount, Max LTV, Max DTI, Min Credit Score, Interest Rate"]
+    with open(csvpath, 'w') as new_csv_file:
+
+        csvwriter = csv.writer(new_csv_file, delimiter = ",")
+        csvwriter.writerow(header)
+        for row in data:
+            csvwriter.writerow(row)
 
 
     return True
