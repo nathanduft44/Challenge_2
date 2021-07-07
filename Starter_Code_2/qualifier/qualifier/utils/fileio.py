@@ -28,3 +28,15 @@ def load_csv(csvpath):
         for row in csvreader:
             data.append(row)
     return data
+
+
+   # @TODO: Complete the usability dialog for savings the CSV Files.
+
+def save_csv(csvpath, qualifying_loans:
+    csvpath = Path(qualifying_loans)
+    with open(csvpath, 'w') as qualifying_loans:
+        csvwriter.writerows(qualifying_loans)
+        csvwriter.writeheader(qualifying_loans)
+
+
+return True
