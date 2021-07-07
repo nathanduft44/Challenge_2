@@ -32,11 +32,11 @@ def load_csv(csvpath):
 
    # @TODO: Complete the usability dialog for savings the CSV Files.
 
-def save_csv(csvpath, qualifying_loans:
-    csvpath = Path(qualifying_loans)
+def save_csv(output_path, data):
+    header
     with open(csvpath, 'w') as qualifying_loans:
         csvwriter.writerows(qualifying_loans)
         csvwriter.writeheader(qualifying_loans)
 
 
-return True
+    return True
