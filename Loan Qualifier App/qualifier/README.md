@@ -1,18 +1,28 @@
-# Project Title
+# Loan Qualifier Application - Challenge 2
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+The is a command-line interface application for saving users qualifying loans in a new CSV file. 
 
 ---
 
 ## Technologies
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+This project leverages python 3.7.10 with the following packages:
+
+* >pip install fire
+* >pip install questionary
+* >import csv
+* >from pathlib import Path
 
 ---
 
 ## Installation Guide
 
 In this section, you should include detailed installation notes containing code blocks and screenshots.
+* >pip install fire
+* >pip install questionary
+* >import csv
+* >from pathlib import Path
+* >pip install pytest
 
 ---
 
