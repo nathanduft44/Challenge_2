@@ -6,14 +6,14 @@ This is a command line application to match applicants with qualifying loans.
 Example:
     $ python app.py
 """
-from Starter_Code_2.qualifier.qualifier.utils.fileio import save_csv
+
 import sys
 import fire
 import questionary
 from pathlib import Path
 
 from qualifier.utils.fileio import load_csv, save_csv
-
+from qualifier.utils.fileio import save_csv
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
     calculate_loan_to_value_ratio,
