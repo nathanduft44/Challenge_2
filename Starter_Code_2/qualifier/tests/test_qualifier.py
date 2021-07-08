@@ -32,7 +32,7 @@ def test_calculate_loan_to_value_ratio():
 
 def test_filters():
     file_path = Path('./data/daily_rate_sheet.csv')
-    bank_data = fileio.load.csv(file_path)
+    bank_data = fileio.load_csv(file_path)
     current_credit_score = 750
     debt = 1500
     income = 4000
