@@ -26,7 +26,7 @@ In this section, you should include detailed installation notes containing code 
 ### Examples
 
 Enter csv path. User will enter loan specifications and ratios to see what loans will be available. Saved in output folder.
-![Image 1](Images/image1.png)
+![Image 1](Starter_Code_2/loan_qualifier_application/Images/image1.png)
 ---
 
 ### Usage
