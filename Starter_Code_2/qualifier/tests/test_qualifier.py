@@ -2,7 +2,10 @@
 from pathlib import Path
 
 #Import fileio
+
+
 from qualifier.utils import fileio
+
 
 # Import Calculators
 from qualifier.utils import calculators
@@ -31,7 +34,7 @@ def test_calculate_loan_to_value_ratio():
     assert calculators.calculate_loan_to_value_ratio(210000, 250000) == 0.84
 
 def test_filters():
-    file_path = Path('./data/daily_rate_sheet.csv')
+    file_path = Path('../data/daily_rate_sheet.csv')
     bank_data = fileio.load_csv(file_path)
     current_credit_score = 750
     debt = 1500
