@@ -6,14 +6,11 @@ The is a command-line interface application for saving users qualifying loans in
 
 ## Technologies
 
-This project leverages python 3.7.10 with the following packages:
+This project leverages python 3.7.10 with the following packages.
 
-* >pip install fire
-* >pip install questionary
-* >import csv
-* >from pathlib import Path
 
----
+questionary- For interactive user prompts and dialogs
+fire- For interactive user prompts and dialogs
 
 ## Installation Guide
 
@@ -28,20 +25,20 @@ In this section, you should include detailed installation notes containing code 
 
 ## Examples
 
-This section should include screenshots, code blocks, or animations showing how your project works.
+Enter csv path. User will enter loan specifications and ratios to see what loans will be available. Saved in output folder
 
 ---
 
 ## Usage
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
-
+To use this project enter your information after runing python app.py
 ---
 
 ## Contributors
 
-In this section, list all the people who contribute to this project; since you may want to be reached by recruiters or potential collaborators, include your contact e-mail, and optionally your LinkedIn or Twitter profile.
-
+Nathan Duft
+nathan.duft@gmail.com
+nathanduft44
 ---
 
 ## License
