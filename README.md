@@ -31,7 +31,8 @@ Enter csv path. User will enter loan specifications and ratios to see what loans
 
 ### Usage
 
-To use this project enter your information after runing python app.py
+To use this application launch the app.py in python terminal. Then insert criteria for your loan application to be matched with potential banks that match. The program will ask you questions to ultimately save your output in a new csv file which will show available loan options. 
+
 ---
 
 ### Contributors
